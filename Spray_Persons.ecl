@@ -1,6 +1,6 @@
-﻿IMPORT STD;
-SrcIP    := '192.168.56.101';
-SrcPath  := '//192.168.56.101/var/lib/HPCCSystems/mydropzone/OnlineLessonPersons';
+﻿IMPORT STD,supportInfo;
+SrcIP    := supportInfo.info;
+SrcPath  := '//' + SrcIP + '/var/lib/HPCCSystems/mydropzone/OnlineLessonPersons';
 Initials := 'MK';
 // ******** Spray ECL/THOR Class File ********
 // SprayFixed(sourceIP, sourcePath, recordSize, destinationGroup, destinationLogicalName,
